@@ -1,0 +1,151 @@
+body {
+  background-color: #dacbb3; 
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    align-content: center;
+    align-items: center;
+  }
+  
+  .dice {
+    text-align: center;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  h3 {
+    margin: 50px;
+    font-family: "Brush Script MT", cursive;
+    text-shadow: 5px 0 #32012F;
+    font-size: 5rem;
+    color:  #F97300;
+    align-content: center;
+  }
+  
+  p {
+    margin-top: 0%;
+    font-size: 4rem;
+    color: black;
+    padding-top: 0.5%;
+  }
+
+  .img1 {
+    width: 60%;
+    padding-top: 0%;
+    align-items: center;
+    -webkit-transition: -webkit-transform 0.8s;
+  }
+
+  .img1:hover {
+      -webkit-transform: rotate(360deg) translateZ(0);
+  }
+
+  .img2 {
+    width: 60%;
+    padding-top: 0%;
+    align-items: center;
+  }
+
+  .img2:hover {
+    -webkit-animation: spin 1s linear infinite;
+    -moz-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+  }
+
+  @-webkit-keyframes spin {
+    100%{-webkit-transform: rotate(360deg);}
+  }
+  @-moz-keyframes spin {
+    100%{-webkit-transform: rotate(360deg);}
+  }
+
+  .button-container {
+    text-align: center;
+    padding-top: 3%;
+    align-content: center;
+    border: black;
+  }
+
+  .btn {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+  } 
+   
+  .btn:hover .btn-slide-show-text1 {
+    margin-left: 65px; 
+  } 
+   
+  .btn-shadow {
+    display: inline-block;
+    margin: 5px;
+    font-weight: 500;
+    line-height: 12px;
+    color: rgb(0, 0, 0);
+    position: relative;
+    text-align: center;
+    background: none;
+    outline: none;
+    border: black;
+    border-color: black;
+  } 
+   
+  .btn-shadow::before {
+    content: "";
+    height: 40px;
+    position: absolute;
+    bottom: -1px;
+    left: 10px;
+    right: 10px;
+    z-index: 0;
+    border-radius: 2em;
+    filter: blur(14px) brightness(0.9);
+  } 
+   
+  .btn-shadow span {
+    display: inline-block;
+    transform-style: preserve-3d;
+    transition: all 0.3s ease-out 0s;
+    padding: 14px 16px;
+    border-radius: 50em;
+    position: relative;
+    z-index: 2;
+    border: 2px solid black;
+    will-change: transform, filter;
+  } 
+   
+  .btn-shadow:hover {
+    color: rgb(1, 1, 0);
+  } 
+   
+  .btn-shadow:hover span {
+    filter: brightness(0.9) contrast(1.2);
+    transform: scale(0.96);
+  } 
+   
+  .btn-shadow:hover::before {
+    bottom: 8px;
+    filter: blur(6px) brightness(0.8);
+    left: 15px;
+    right: 15px;
+  } 
+   
+  .btn-shadow--orange span {
+    background: #F97300;
+  } 
+  
+  footer {
+    margin-top: 10px;
+    color: black;
+    text-align: center;
+    font-family: "Brush Script MT", cursive;
+    font-size: 17px;
+    align-content: center;
+  }
+  
+  
